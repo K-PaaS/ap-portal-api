@@ -1,4 +1,4 @@
-# PAAS-TA-PORTAL-API
+# ap-portal-api
 
 Portal API는 Cloudfoundry API를 제공하는 서비스이다.
 

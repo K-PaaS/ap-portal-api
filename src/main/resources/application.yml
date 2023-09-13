@@ -4,7 +4,7 @@ spring:
     name: PortalApi  # Service registers under this name
   security:
     username: admin
-    password: openpaasta
+    password: openkpaas
   flyway:
     enabled: false
 
@@ -19,7 +19,7 @@ management:     # If you set off security...
   security:
     enabled: false
 
-# paasta info
+# ap info
 cloudfoundry:
   cc:
     api:
@@ -55,7 +55,7 @@ multipart:
   maxFileSize: 1000Mb
   maxRequestSize: 1000Mb
 
-paasta:
+ap:
   portal:
     api:
       authorization:
@@ -97,9 +97,9 @@ eureka:
 
 #Infra Admin Settings (current version not used)
 #project:
-#  name: paasta-api
-#  artifactId: paasta-cf-api
-#  description: paasta-cf-api management service
+#  name: ap-api
+#  artifactId: ap-cf-api
+#  description: ap-cf-api management service
 #info:
 #  app:
 #    encoding: Encoding - UTF-8
