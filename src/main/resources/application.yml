@@ -59,7 +59,7 @@ ap:
   portal:
     api:
       authorization:
-        base64: Basic YWRtaW46b3BlbnBhYXN0YQ==
+        base64: <HEADER_AUTH>
       zuulUrl:
         cfapi: http://<PORTAL_GATEWAY_IP>:<PORTAL_GATEWAY_PORT>/portalapi
         commonapi: http://<PORTAL_GATEWAY_IP>:<PORTAL_GATEWAY_PORT>/commonapi

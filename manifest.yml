@@ -41,7 +41,7 @@ applications:
       cloudfoundry_user_uaaClient_skipSSLValidation: true
       cloudfoundry_authorization: cf-Authorization
 
-      ap_portal_api_authorization_base64: Basic YWRtaW46b3BlbnBhYXN0YQ==
+      ap_portal_api_authorization_base64: <HEADER_AUTH>
       ap_portal_api_zuulUrl_cfapi: http://portal-gateway.<APP_DOMAIN>/portalapi
       ap_portal_api_zuulUrl_commonapi: http://portal-gateway.<APP_DOMAIN>/commonapi
       ap_portal_api_zuulUrl_storageapi: http://portal-gateway.<APP_DOMAIN>/storageapi
