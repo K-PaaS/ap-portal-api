@@ -3,8 +3,8 @@ spring:
   application:
     name: PortalApi  # Service registers under this name
   security:
-    username: admin
-    password: openkpaas
+    username: <SPRING_SECURITY_USERNAME>
+    password: <SPRING_SECURITY_PASSWORD>
   flyway:
     enabled: false
 

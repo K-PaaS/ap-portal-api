@@ -16,8 +16,8 @@ applications:
       JBP_CONFIG_CONTAINER_SECURITY_PROVIDER: '{key_manager_enabled: false, trust_manager_enabled: false}'
       spring_application_name: PortalApi
 
-      spring_security_username: admin
-      spring_security_password: openkpaas
+      spring_security_username: <SPRING_SECURITY_USERNAME>
+      spring_security_password: <SPRING_SECURITY_PASSWORD>
 
       tailsocket_port: 5555
 
