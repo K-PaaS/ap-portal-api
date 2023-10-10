@@ -22,7 +22,7 @@ apply plugin: 'org.springframework.boot'
 apply plugin: "io.spring.dependency-management"
 
 jar {
-    baseName = 'paas-ta-portal-api'
+    baseName = 'ap-portal-api'
 }
 
 sourceCompatibility = 1.8
@@ -128,7 +128,7 @@ task pathingJar(type: Jar) {
 
 bootRun {
    dependsOn pathingJar
-   jvmArgs = [ '-server', '-Xmx256m', '-Dspring.profiles.active=local', '-Deureka.client.enabled=false', '-Dspring.cloud.config.enabled=false', '-Dspring.config.location=C:/paasta-workspace/official/PAAS-TA-PORTAL-CONFIG-DATA/PortalApi.yml', '-Dio.netty.leakDetectionLevel=PARANOID' ]
+   jvmArgs = [ '-server', '-Xmx256m', '-Dspring.profiles.active=local', '-Deureka.client.enabled=false', '-Dspring.cloud.config.enabled=false', '-Dspring.config.location=C:/workspace/official/PORTAL-CONFIG-DATA/PortalApi.yml', '-Dio.netty.leakDetectionLevel=PARANOID' ]
    doFirst {
        // classpath = files("$buildDir/classes/main", "$buildDir/resources/main", pathingJar.archivePath)
        classpath = files(sourceSets.main.output.files, pathingJar.archivePath)

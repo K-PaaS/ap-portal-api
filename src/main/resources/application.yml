@@ -3,8 +3,8 @@ spring:
   application:
     name: PortalApi  # Service registers under this name
   security:
-    username: admin
-    password: openpaasta
+    username: <SPRING_SECURITY_USERNAME>
+    password: <SPRING_SECURITY_PASSWORD>
   flyway:
     enabled: false
 
@@ -19,7 +19,7 @@ management:     # If you set off security...
   security:
     enabled: false
 
-# paasta info
+# ap info
 cloudfoundry:
   cc:
     api:
@@ -55,11 +55,11 @@ multipart:
   maxFileSize: 1000Mb
   maxRequestSize: 1000Mb
 
-paasta:
+ap:
   portal:
     api:
       authorization:
-        base64: Basic YWRtaW46b3BlbnBhYXN0YQ==
+        base64: <HEADER_AUTH>
       zuulUrl:
         cfapi: http://<PORTAL_GATEWAY_IP>:<PORTAL_GATEWAY_PORT>/portalapi
         commonapi: http://<PORTAL_GATEWAY_IP>:<PORTAL_GATEWAY_PORT>/commonapi
@@ -97,9 +97,9 @@ eureka:
 
 #Infra Admin Settings (current version not used)
 #project:
-#  name: paasta-api
-#  artifactId: paasta-cf-api
-#  description: paasta-cf-api management service
+#  name: ap-api
+#  artifactId: ap-cf-api
+#  description: ap-cf-api management service
 #info:
 #  app:
 #    encoding: Encoding - UTF-8
